@@ -119,6 +119,12 @@ section{padding:88px 0}
 .format{border-left:4px solid var(--gold);padding:4px 0 4px 22px}
 .format p{color:var(--muted);margin-top:8px}
 
+.modes{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:22px 0 0}
+.modes dt{font-weight:600;color:var(--night)}
+.modes dd{margin:4px 0 0;color:var(--muted);font-size:.96rem}
+@media (max-width:900px){.modes{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.modes{grid-template-columns:1fr}}
+
 /* contact */
 .contact{background:var(--stone)}
 .contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
@@ -303,6 +309,14 @@ footer a{color:#C9D4E0}
         <p>Join an open course alongside people from other companies. <span class="tbc">Upcoming dates to add.</span></p>
       </div>
     </div>
+
+    <h3 style="margin-top:56px">Four ways to learn</h3>
+    <dl class="modes">
+      <div><dt>Classroom</dt><dd>Face to face with the trainer, in a room equipped for group work.</dd></div>
+      <div><dt>Virtual classroom</dt><dd>Live online sessions for teams spread across sites or cities.</dd></div>
+      <div><dt>Blended</dt><dd>Classroom sessions combined with online self-study between them.</dd></div>
+      <div><dt>Business simulation</dt><dd>Learning by running a realistic scenario as a team, so it sticks.</dd></div>
+    </dl>
   </div>
 </section>
 
