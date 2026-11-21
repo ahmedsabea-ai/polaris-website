@@ -49,7 +49,7 @@ p{margin:0 0 1em;max-width:62ch}
 .site-header .wrap{display:flex;align-items:center;gap:28px;min-height:68px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--night)}
 .brand small{display:block;font-family:var(--body);font-weight:500;font-size:.62rem;letter-spacing:.14em;color:var(--muted)}
-.brand svg{width:30px;height:30px;flex:none}
+.brand img{height:46px;width:auto}
 .nav{display:flex;gap:26px;margin-left:auto}
 .nav a{text-decoration:none;font-weight:500;font-size:.96rem;color:var(--ink)}
 .nav a:hover{color:var(--nile)}
@@ -152,7 +152,7 @@ footer a{color:#C9D4E0}
 @media (max-width:480px){
   .wrap{padding:0 16px}
   .site-header .btn{padding:.6em .9em;font-size:.9rem}
-  .brand small{display:none}
+  .brand img{height:38px}
 }
 </style>
 </head>
@@ -160,10 +160,8 @@ footer a{color:#C9D4E0}
 
 <header class="site-header">
   <div class="wrap">
-    <!-- TODO: replace this wordmark with the real Polaris logo file -->
     <a class="brand" href="#top" aria-label="Polaris Human Development, home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#2A6CA6"/><path d="M16 5l2.6 8.4L27 16l-8.4 2.6L16 27l-2.6-8.4L5 16l8.4-2.6z" fill="#fff"/></svg>
-      <span>Polaris<small>HUMAN DEVELOPMENT</small></span>
+      <img src="assets/polaris-logo.png" alt="Polaris Human Development" width="1299" height="462">
     </a>
     <nav class="nav" aria-label="Main">
       <a href="#programmes">Programmes</a>
