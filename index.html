@@ -126,6 +126,13 @@ section{padding:88px 0}
 @media (max-width:900px){.clients{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:480px){.clients{grid-template-columns:repeat(2,1fr)}.clients li{height:92px;padding:14px}}
 
+.proof{margin-top:10px;color:var(--muted);font-size:1rem}
+.proof a{color:var(--nile);font-weight:600}
+.wa{position:fixed;right:20px;bottom:20px;z-index:20;display:flex;align-items:center;gap:8px;background:#1F8F4E;color:#fff;text-decoration:none;font-weight:600;font-size:.98rem;padding:.75em 1.1em;border-radius:999px;box-shadow:0 6px 18px rgba(6,20,42,.28)}
+.wa:hover{background:#19783F}
+.wa svg{width:20px;height:20px}
+@media (max-width:480px){.wa{right:14px;bottom:14px}}
+
 /* contact */
 .contact{background:var(--stone)}
 .contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
@@ -136,7 +143,7 @@ section{padding:88px 0}
 .contact-card dd{margin:2px 0 0;font-weight:600;font-size:1.08rem}
 .contact-card a{color:var(--nile)}
 
-footer{background:var(--deep);color:#9FB0C2;padding:30px 0;font-size:.9rem}
+footer{background:var(--deep);color:#9FB0C2;padding:30px 0 84px;font-size:.9rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
 footer a{color:#C9D4E0}
 
@@ -324,6 +331,7 @@ footer a{color:#C9D4E0}
   <div class="wrap">
     <h2>Some of our clients</h2>
     <p class="intro">Organisations whose people have trained with Polaris.</p>
+    <p class="proof"><a href="https://www.facebook.com/polarisHDpage/reviews" rel="noopener">All 19 reviewers on Facebook recommend Polaris</a>, where 11,000 people follow our page.</p>
     <ul class="clients">
       <li><img src="assets/clients/al-futtaim.png" alt="Al-Futtaim" width="206" height="200"></li>
       <li><img src="assets/clients/johnson-johnson.png" alt="Johnson &amp; Johnson" width="360" height="85"></li>
@@ -360,6 +368,7 @@ footer a{color:#C9D4E0}
       <dl>
         <dt>Email</dt><dd><a href="mailto:info@polarishd.co">info@polarishd.co</a></dd>
         <dt>Phone</dt><dd><a href="tel:+201028332844">010 2833 2844</a></dd>
+        <dt>WhatsApp</dt><dd><a href="https://wa.me/201028332844" rel="noopener">Message us on WhatsApp</a></dd>
         <dt>Address</dt><dd>36 Sheraton Al Matar, El-Nozha, Cairo, Egypt</dd>
         <dt>Follow us</dt><dd><a href="https://www.linkedin.com/company/polarishd/" rel="noopener">LinkedIn</a> &nbsp; <a href="https://www.facebook.com/polarisHDpage" rel="noopener">Facebook</a></dd>
       </dl>
@@ -375,6 +384,11 @@ footer a{color:#C9D4E0}
     <span><a href="mailto:info@polarishd.co">info@polarishd.co</a> &nbsp; <a href="https://www.linkedin.com/company/polarishd/" rel="noopener">LinkedIn</a> &nbsp; <a href="https://www.facebook.com/polarisHDpage" rel="noopener">Facebook</a></span>
   </div>
 </footer>
+
+<a class="wa" href="https://wa.me/201028332844" rel="noopener" aria-label="Message Polaris on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+  <span>WhatsApp</span>
+</a>
 
 </body>
 </html>
